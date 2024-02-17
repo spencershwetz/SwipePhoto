@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D52E1CF4F9829F3F0AD73DDB2EF2819E"
-               BuildableName = "Pods_SwipePhotos.framework"
-               BlueprintName = "Pods-SwipePhotos"
+               BlueprintIdentifier = "041D58432F27FEC13E66302EE594A2B8"
+               BuildableName = "Pods_SwipePhoto.framework"
+               BlueprintName = "Pods-SwipePhoto"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

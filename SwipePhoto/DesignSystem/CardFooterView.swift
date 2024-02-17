@@ -53,3 +53,28 @@ class CardFooterView: UIView {
                              height: label.intrinsicContentSize.height)
     }
 }
+
+extension NSAttributedString.Key {
+    
+    static var shadowAttribute: NSShadow = {
+        let shadow = NSShadow()
+        shadow.shadowOffset = CGSize(width: 0, height: 1)
+        shadow.shadowBlurRadius = 2
+        shadow.shadowColor = UIColor.black.withAlphaComponent(0.3)
+        return shadow
+    }()
+    
+    static var titleAttributes: [NSAttributedString.Key: Any] = [
+        // swiftlint:disable:next force_unwrapping
+        NSAttributedString.Key.font: UIFont(name: "ArialRoundedMTBold", size: 24)!,
+        NSAttributedString.Key.foregroundColor: UIColor.white,
+        NSAttributedString.Key.shadow: NSAttributedString.Key.shadowAttribute
+    ]
+    
+    static var subtitleAttributes: [NSAttributedString.Key: Any] = [
+        // swiftlint:disable:next force_unwrapping
+        NSAttributedString.Key.font: UIFont(name: "Arial", size: 17)!,
+        NSAttributedString.Key.foregroundColor: UIColor.white,
+        NSAttributedString.Key.shadow: NSAttributedString.Key.shadowAttribute
+    ]
+}

@@ -15,6 +15,22 @@ class ButtonStackView: UIStackView {
     
     weak var delegate: ButtonStackViewDelegate?
     
+    private let undoButton: BounceButton = {
+        let button = BounceButton()
+        button.setImage(UIImage(named: "undo"), for: .normal)
+        button.addTarget(self, action: #selector(handleTap), for: .touchUpInside)
+        button.tag = 1
+        return button
+    }()
+    
+    private let passButton: BounceButton = {
+        let button = BounceButton()
+        button.setImage(UIImage(named: "pass"), for: .normal)
+        button.addTarget(self, action: #selector(handleTap), for: .touchUpInside)
+        button.tag = 2
+        return button
+    }()
+    
     private let superLikeButton: BounceButton = {
         let button = BounceButton()
         button.setImage(UIImage(named: "star"), for: .normal)
@@ -53,7 +69,8 @@ class ButtonStackView: UIStackView {
     private func configureButtons() {
         let largeMultiplier: CGFloat = 66 / 414 //based on width of iPhone 8+
         let smallMultiplier: CGFloat = 54 / 414 //based on width of iPhone 8+
-
+        addArrangedSubview(from: undoButton, diameterMultiplier: smallMultiplier)
+        addArrangedSubview(from: passButton, diameterMultiplier: largeMultiplier)
         addArrangedSubview(from: superLikeButton, diameterMultiplier: smallMultiplier)
         addArrangedSubview(from: likeButton, diameterMultiplier: largeMultiplier)
         addArrangedSubview(from: boostButton, diameterMultiplier: smallMultiplier)

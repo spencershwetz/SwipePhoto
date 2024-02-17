@@ -16,33 +16,33 @@ class SwipePhotoViewController: UIViewController {
     
     private let cardModels = [
         CardModel(name: "Michelle",
-                        age: 26,
-                        occupation: "Graphic Designer",
-                        image: UIImage(named: "michelle")),
+                  age: 26,
+                  occupation: "Graphic Designer",
+                  image: UIImage(named: "michelle")),
         CardModel(name: "Joshua",
-                        age: 27,
-                        occupation: "Business Services Sales Representative",
-                        image: UIImage(named: "joshua")),
+                  age: 27,
+                  occupation: "Business Services Sales Representative",
+                  image: UIImage(named: "joshua")),
         CardModel(name: "Daiane",
-                        age: 23,
-                        occupation: "Graduate Student",
-                        image: UIImage(named: "daiane")),
+                  age: 23,
+                  occupation: "Graduate Student",
+                  image: UIImage(named: "daiane")),
         CardModel(name: "Julian",
-                        age: 25,
-                        occupation: "Model/Photographer",
-                        image: UIImage(named: "julian")),
+                  age: 25,
+                  occupation: "Model/Photographer",
+                  image: UIImage(named: "julian")),
         CardModel(name: "Andrew",
-                        age: 26,
-                        occupation: nil,
-                        image: UIImage(named: "andrew")),
+                  age: 26,
+                  occupation: nil,
+                  image: UIImage(named: "andrew")),
         CardModel(name: "Bailey",
-                        age: 25,
-                        occupation: "Software Engineer",
-                        image: UIImage(named: "bailey")),
+                  age: 25,
+                  occupation: "Software Engineer",
+                  image: UIImage(named: "bailey")),
         CardModel(name: "Rachel",
-                        age: 27,
-                        occupation: "Interior Designer",
-                        image: UIImage(named: "rachel"))
+                  age: 27,
+                  occupation: "Interior Designer",
+                  image: UIImage(named: "rachel"))
     ]
     
     override func viewDidLoad() {
@@ -111,5 +111,62 @@ class SwipePhotoViewController: UIViewController {
     @objc
     private func handleShift(_ sender: UIButton) {
         cardStack.shift(withDistance: sender.tag == 1 ? -1 : 1, animated: true)
+    }
+}
+
+// MARK: Data Source + Delegates
+
+extension SwipePhotoViewController: ButtonStackViewDelegate, SwipeCardStackDataSource, SwipeCardStackDelegate {
+    
+    func cardStack(_ cardStack: SwipeCardStack, cardForIndexAt index: Int) -> SwipeCard {
+        let card = SwipeCard()
+        card.footerHeight = 80
+        card.swipeDirections = [.left, .up, .right]
+        for direction in card.swipeDirections {
+            card.setOverlay(CardOverlay(direction: direction), forDirection: direction)
+        }
+        
+        let model = cardModels[index]
+        card.content = CardContentView(withImage: model.image)
+        card.footer = CardFooterView(withTitle: "\(model.name), \(model.age)", subtitle: model.occupation)
+        
+        return card
+    }
+    
+    func numberOfCards(in cardStack: SwipeCardStack) -> Int {
+        return cardModels.count
+    }
+    
+    func didSwipeAllCards(_ cardStack: SwipeCardStack) {
+        print("Swiped all cards!")
+    }
+    
+    func cardStack(_ cardStack: SwipeCardStack, didUndoCardAt index: Int, from direction: SwipeDirection) {
+        print("Undo \(direction) swipe on \(cardModels[index].name)")
+    }
+    
+    func cardStack(_ cardStack: SwipeCardStack, didSwipeCardAt index: Int, with direction: SwipeDirection) {
+        print("Swiped \(direction) on \(cardModels[index].name)")
+    }
+    
+    func cardStack(_ cardStack: SwipeCardStack, didSelectCardAt index: Int) {
+        print("Card tapped")
+    }
+    
+    func didTapButton(button: BounceButton) {
+        switch button.tag {
+        case 1:
+            cardStack.undoLastSwipe(animated: true)
+        case 2:
+            cardStack.swipe(.left, animated: true)
+        case 3:
+            cardStack.swipe(.up, animated: true)
+        case 4:
+            cardStack.swipe(.right, animated: true)
+        case 5:
+            cardStack.reloadData()
+        default:
+            break
+        }
     }
 }

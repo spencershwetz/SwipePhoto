@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_SwipePhotosVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_SwipePhotosVersionString[];
+FOUNDATION_EXPORT double Pods_SwipePhotoVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_SwipePhotoVersionString[];
 

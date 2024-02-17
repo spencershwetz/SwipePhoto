@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D76CF5F35C9AA9D53D7CD7F /* Pods_SwipePhoto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0B088904992BC4FECD0D3C3 /* Pods_SwipePhoto.framework */; };
 		73B8FD1C2B7E67CE00245BA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B8FD1B2B7E67CE00245BA5 /* AppDelegate.swift */; };
 		73B8FD1E2B7E67CE00245BA5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B8FD1D2B7E67CE00245BA5 /* SceneDelegate.swift */; };
 		73B8FD232B7E67CE00245BA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73B8FD212B7E67CE00245BA5 /* Main.storyboard */; };
@@ -20,11 +21,10 @@
 		73B8FD3B2B7E67E200245BA5 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B8FD342B7E67E200245BA5 /* UIView+Extensions.swift */; };
 		73B8FD3C2B7E67E200245BA5 /* CardFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B8FD352B7E67E200245BA5 /* CardFooterView.swift */; };
 		73B8FD3E2B7E69A200245BA5 /* ButtonStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B8FD3D2B7E69A200245BA5 /* ButtonStackView.swift */; };
-		DF505F602FD342CDA841A5EC /* Pods_SwipePhotos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E2D681B956E9D991C174598 /* Pods_SwipePhotos.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		73B8FD182B7E67CE00245BA5 /* SwipePhotos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwipePhotos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		73B8FD182B7E67CE00245BA5 /* SwipePhoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwipePhoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73B8FD1B2B7E67CE00245BA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73B8FD1D2B7E67CE00245BA5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		73B8FD222B7E67CE00245BA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -40,8 +40,10 @@
 		73B8FD352B7E67E200245BA5 /* CardFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardFooterView.swift; sourceTree = "<group>"; };
 		73B8FD3D2B7E69A200245BA5 /* ButtonStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonStackView.swift; sourceTree = "<group>"; };
 		76CCDCB9034EF90288AB046E /* Pods-SwipePhotos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwipePhotos.debug.xcconfig"; path = "Target Support Files/Pods-SwipePhotos/Pods-SwipePhotos.debug.xcconfig"; sourceTree = "<group>"; };
-		8E2D681B956E9D991C174598 /* Pods_SwipePhotos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwipePhotos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9708AEE1C0C06F1C129A3C0D /* Pods-SwipePhotos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwipePhotos.release.xcconfig"; path = "Target Support Files/Pods-SwipePhotos/Pods-SwipePhotos.release.xcconfig"; sourceTree = "<group>"; };
+		B0B088904992BC4FECD0D3C3 /* Pods_SwipePhoto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwipePhoto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCF0057ACB58008C98955164 /* Pods-SwipePhoto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwipePhoto.debug.xcconfig"; path = "Target Support Files/Pods-SwipePhoto/Pods-SwipePhoto.debug.xcconfig"; sourceTree = "<group>"; };
+		CEBDEB379F834B78F777B160 /* Pods-SwipePhoto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwipePhoto.release.xcconfig"; path = "Target Support Files/Pods-SwipePhoto/Pods-SwipePhoto.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF505F602FD342CDA841A5EC /* Pods_SwipePhotos.framework in Frameworks */,
+				3D76CF5F35C9AA9D53D7CD7F /* Pods_SwipePhoto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +61,7 @@
 		73B8FD0F2B7E67CE00245BA5 = {
 			isa = PBXGroup;
 			children = (
-				73B8FD1A2B7E67CE00245BA5 /* SwipePhotos */,
+				73B8FD1A2B7E67CE00245BA5 /* SwipePhoto */,
 				73B8FD192B7E67CE00245BA5 /* Products */,
 				9D3E155763C58F4EBC995434 /* Pods */,
 				C5C02782C5ACACBBCF3A966E /* Frameworks */,
@@ -69,12 +71,12 @@
 		73B8FD192B7E67CE00245BA5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				73B8FD182B7E67CE00245BA5 /* SwipePhotos.app */,
+				73B8FD182B7E67CE00245BA5 /* SwipePhoto.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		73B8FD1A2B7E67CE00245BA5 /* SwipePhotos */ = {
+		73B8FD1A2B7E67CE00245BA5 /* SwipePhoto */ = {
 			isa = PBXGroup;
 			children = (
 				73B8FD3F2B7E7FCA00245BA5 /* AppDelegate */,
@@ -85,7 +87,7 @@
 				73B8FD422B7E801300245BA5 /* Assets */,
 				73B8FD292B7E67D000245BA5 /* Info.plist */,
 			);
-			path = SwipePhotos;
+			path = SwipePhoto;
 			sourceTree = "<group>";
 		};
 		73B8FD3F2B7E7FCA00245BA5 /* AppDelegate */ = {
@@ -156,6 +158,8 @@
 			children = (
 				76CCDCB9034EF90288AB046E /* Pods-SwipePhotos.debug.xcconfig */,
 				9708AEE1C0C06F1C129A3C0D /* Pods-SwipePhotos.release.xcconfig */,
+				BCF0057ACB58008C98955164 /* Pods-SwipePhoto.debug.xcconfig */,
+				CEBDEB379F834B78F777B160 /* Pods-SwipePhoto.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -163,7 +167,7 @@
 		C5C02782C5ACACBBCF3A966E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8E2D681B956E9D991C174598 /* Pods_SwipePhotos.framework */,
+				B0B088904992BC4FECD0D3C3 /* Pods_SwipePhoto.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -171,9 +175,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		73B8FD172B7E67CE00245BA5 /* SwipePhotos */ = {
+		73B8FD172B7E67CE00245BA5 /* SwipePhoto */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 73B8FD2C2B7E67D000245BA5 /* Build configuration list for PBXNativeTarget "SwipePhotos" */;
+			buildConfigurationList = 73B8FD2C2B7E67D000245BA5 /* Build configuration list for PBXNativeTarget "SwipePhoto" */;
 			buildPhases = (
 				1625B46D93626A05319F2BE9 /* [CP] Check Pods Manifest.lock */,
 				73B8FD142B7E67CE00245BA5 /* Sources */,
@@ -185,9 +189,9 @@
 			);
 			dependencies = (
 			);
-			name = SwipePhotos;
+			name = SwipePhoto;
 			productName = SwipePhotos;
-			productReference = 73B8FD182B7E67CE00245BA5 /* SwipePhotos.app */;
+			productReference = 73B8FD182B7E67CE00245BA5 /* SwipePhoto.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -205,7 +209,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 73B8FD132B7E67CE00245BA5 /* Build configuration list for PBXProject "SwipePhotos" */;
+			buildConfigurationList = 73B8FD132B7E67CE00245BA5 /* Build configuration list for PBXProject "SwipePhoto" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -218,7 +222,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				73B8FD172B7E67CE00245BA5 /* SwipePhotos */,
+				73B8FD172B7E67CE00245BA5 /* SwipePhoto */,
 			);
 		};
 /* End PBXProject section */
@@ -252,7 +256,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SwipePhotos-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-SwipePhoto-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -265,15 +269,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SwipePhotos/Pods-SwipePhotos-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-SwipePhoto/Pods-SwipePhoto-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SwipePhotos/Pods-SwipePhotos-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-SwipePhoto/Pods-SwipePhoto-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwipePhotos/Pods-SwipePhotos-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwipePhoto/Pods-SwipePhoto-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -439,7 +443,7 @@
 		};
 		73B8FD2D2B7E67D000245BA5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 76CCDCB9034EF90288AB046E /* Pods-SwipePhotos.debug.xcconfig */;
+			baseConfigurationReference = BCF0057ACB58008C98955164 /* Pods-SwipePhoto.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -447,12 +451,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N47NT3K6N8;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SwipePhotos/Info.plist;
+				INFOPLIST_FILE = SwipePhoto/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -468,7 +473,7 @@
 		};
 		73B8FD2E2B7E67D000245BA5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9708AEE1C0C06F1C129A3C0D /* Pods-SwipePhotos.release.xcconfig */;
+			baseConfigurationReference = CEBDEB379F834B78F777B160 /* Pods-SwipePhoto.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -476,12 +481,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N47NT3K6N8;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SwipePhotos/Info.plist;
+				INFOPLIST_FILE = SwipePhoto/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -498,7 +504,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		73B8FD132B7E67CE00245BA5 /* Build configuration list for PBXProject "SwipePhotos" */ = {
+		73B8FD132B7E67CE00245BA5 /* Build configuration list for PBXProject "SwipePhoto" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				73B8FD2A2B7E67D000245BA5 /* Debug */,
@@ -507,7 +513,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		73B8FD2C2B7E67D000245BA5 /* Build configuration list for PBXNativeTarget "SwipePhotos" */ = {
+		73B8FD2C2B7E67D000245BA5 /* Build configuration list for PBXNativeTarget "SwipePhoto" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				73B8FD2D2B7E67D000245BA5 /* Debug */,
