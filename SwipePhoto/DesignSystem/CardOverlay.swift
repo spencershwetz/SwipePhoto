@@ -30,8 +30,8 @@ class CardOverlay: UIView {
     
     private func createLeftOverlay() {
         let leftTextView = CardOverlayLabelView(withTitle: "NOPE",
-                                                      color: .sampleRed,
-                                                      rotation: CGFloat.pi / 10)
+                                                color: .sampleRed,
+                                                rotation: CGFloat.pi / 10)
         addSubview(leftTextView)
         leftTextView.anchor(top: topAnchor,
                             right: rightAnchor,
@@ -41,8 +41,8 @@ class CardOverlay: UIView {
     
     private func createUpOverlay() {
         let upTextView = CardOverlayLabelView(withTitle: "LOVE",
-                                                    color: .sampleBlue,
-                                                    rotation: -CGFloat.pi / 20)
+                                              color: .sampleBlue,
+                                              rotation: -CGFloat.pi / 20)
         addSubview(upTextView)
         upTextView.anchor(bottom: bottomAnchor, paddingBottom: 20)
         upTextView.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
@@ -50,8 +50,8 @@ class CardOverlay: UIView {
     
     private func createRightOverlay() {
         let rightTextView = CardOverlayLabelView(withTitle: "LIKE",
-                                                       color: .sampleGreen,
-                                                       rotation: -CGFloat.pi / 10)
+                                                 color: .sampleGreen,
+                                                 rotation: -CGFloat.pi / 10)
         addSubview(rightTextView)
         rightTextView.anchor(top: topAnchor,
                              left: leftAnchor,

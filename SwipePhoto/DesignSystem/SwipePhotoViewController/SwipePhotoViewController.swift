@@ -27,6 +27,7 @@ class SwipePhotoViewController: UIViewController {
     }
     
     private func configureNavigationBar() {
+        
         let backButton = UIBarButtonItem(title: "Back",
                                          style: .plain,
                                          target: self,
@@ -47,6 +48,7 @@ class SwipePhotoViewController: UIViewController {
     }
     
     private func configureBackgroundGradient() {
+        
         let backgroundGray = UIColor(red: 244 / 255, green: 247 / 255, blue: 250 / 255, alpha: 1)
         let gradientLayer = CAGradientLayer()
         gradientLayer.colors = [UIColor.white.cgColor, backgroundGray.cgColor]
@@ -87,9 +89,11 @@ class SwipePhotoViewController: UIViewController {
 extension SwipePhotoViewController: SwipeCardStackDataSource, SwipeCardStackDelegate {
     
     func cardStack(_ cardStack: SwipeCardStack, cardForIndexAt index: Int) -> SwipeCard {
+        
         let card = SwipeCard()
         card.footerHeight = 80
         card.swipeDirections = [.left, .up, .right]
+        
         for direction in card.swipeDirections {
             card.setOverlay(CardOverlay(direction: direction), forDirection: direction)
         }

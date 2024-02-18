@@ -15,6 +15,7 @@ class CardFooterView: UIView {
     
     init(withTitle title: String?, subtitle: String?) {
         super.init(frame: CGRect.zero)
+        
         backgroundColor = .clear
         layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
         layer.cornerRadius = 10
@@ -28,6 +29,7 @@ class CardFooterView: UIView {
     }
     
     private func initialize(title: String?, subtitle: String?) {
+        
         let attributedText = NSMutableAttributedString(string: (title ?? "") + "\n",
                                                        attributes: NSAttributedString.Key.titleAttributes)
         if let subtitle = subtitle, !subtitle.isEmpty {
@@ -46,6 +48,7 @@ class CardFooterView: UIView {
     }
     
     override func layoutSubviews() {
+        
         let padding: CGFloat = 20
         label.frame = CGRect(x: padding,
                              y: bounds.height - label.intrinsicContentSize.height - padding,

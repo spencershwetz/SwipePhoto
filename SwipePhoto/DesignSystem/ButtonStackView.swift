@@ -57,8 +57,10 @@ class ButtonStackView: UIStackView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        
         distribution = .equalSpacing
         alignment = .center
+        
         configureButtons()
     }
     
@@ -67,6 +69,7 @@ class ButtonStackView: UIStackView {
     }
     
     private func configureButtons() {
+        
         let largeMultiplier: CGFloat = 66 / 414 //based on width of iPhone 8+
         let smallMultiplier: CGFloat = 54 / 414 //based on width of iPhone 8+
         addArrangedSubview(from: undoButton, diameterMultiplier: smallMultiplier)
@@ -77,11 +80,14 @@ class ButtonStackView: UIStackView {
     }
     
     private func addArrangedSubview(from button: BounceButton, diameterMultiplier: CGFloat) {
+        
         let container = ButtonContainer()
         container.addSubview(button)
+        
         button.anchorToSuperview()
         
         addArrangedSubview(container)
+        
         container.translatesAutoresizingMaskIntoConstraints = false
         container.widthAnchor.constraint(lessThanOrEqualTo: widthAnchor, multiplier: diameterMultiplier).isActive = true
         container.heightAnchor.constraint(equalTo: button.widthAnchor).isActive = true
