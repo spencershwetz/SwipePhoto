@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3D76CF5F35C9AA9D53D7CD7F /* Pods_SwipePhoto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0B088904992BC4FECD0D3C3 /* Pods_SwipePhoto.framework */; };
+		737688762B8288F5005A1931 /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737688752B8288F5005A1931 /* SwipeViewController.swift */; };
 		73B8FD1C2B7E67CE00245BA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B8FD1B2B7E67CE00245BA5 /* AppDelegate.swift */; };
 		73B8FD1E2B7E67CE00245BA5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B8FD1D2B7E67CE00245BA5 /* SceneDelegate.swift */; };
 		73B8FD232B7E67CE00245BA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73B8FD212B7E67CE00245BA5 /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		737688752B8288F5005A1931 /* SwipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeViewController.swift; sourceTree = "<group>"; };
 		73B8FD182B7E67CE00245BA5 /* SwipePhoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwipePhoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73B8FD1B2B7E67CE00245BA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73B8FD1D2B7E67CE00245BA5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +60,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		737688742B8288D7005A1931 /* SwipeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				737688752B8288F5005A1931 /* SwipeViewController.swift */,
+			);
+			path = SwipeViewController;
+			sourceTree = "<group>";
+		};
 		73B8FD0F2B7E67CE00245BA5 = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +136,7 @@
 		73B8FD432B7E804700245BA5 /* DesignSystem */ = {
 			isa = PBXGroup;
 			children = (
+				737688742B8288D7005A1931 /* SwipeViewController */,
 				73B8FD452B7E80D100245BA5 /* SwipePhotoViewController */,
 				73B8FD302B7E67E200245BA5 /* BounceButton.swift */,
 				73B8FD322B7E67E200245BA5 /* CardContentView.swift */,
@@ -295,6 +306,7 @@
 				73B8FD1C2B7E67CE00245BA5 /* AppDelegate.swift in Sources */,
 				73B8FD3A2B7E67E200245BA5 /* CardOverlay.swift in Sources */,
 				73B8FD362B7E67E200245BA5 /* SwipePhotoViewController.swift in Sources */,
+				737688762B8288F5005A1931 /* SwipeViewController.swift in Sources */,
 				73B8FD1E2B7E67CE00245BA5 /* SceneDelegate.swift in Sources */,
 				73B8FD392B7E67E200245BA5 /* CardContentView.swift in Sources */,
 			);
